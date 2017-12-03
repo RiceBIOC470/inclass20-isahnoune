@@ -1,4 +1,15 @@
 %Inclass 20
+%GB comments
+1 100
+2 100
+3 50 This is not correct. Try to look at this code to help correct your mistake. 
+fit_str3 = 'V*x^n/(K^n+x^n)';
+fitmodel3 = fittype(fit_str3);
+[fit_out3, fit_metric3] = fit(xx', yy', fitmodel3, 'Lower', [0, 0, 0]); 
+plot(fit_out3, xx', yy');
+4. 100
+Overall 88
+
 
 %In this folder you will find a .mat file with x and y data
 
